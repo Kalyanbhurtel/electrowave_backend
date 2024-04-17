@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [ "./server", "./admin" ],
+  "scripts": {
+    "server:dev": "yarn workspace @ecommerce/server dev",
+    "admin:dev": "yarn workspace @ecommerce/admin dev",
+    "dev": "yarn server:dev & yarn admin:dev"
+  }
+}
